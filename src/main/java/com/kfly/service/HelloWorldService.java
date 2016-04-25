@@ -10,8 +10,10 @@ import org.springframework.stereotype.Component;
 public class HelloWorldService {
     @Value("${name:World}")
     private String name;
-
     public String getHelloMessage(){
         return "hello "+this.name;
+    }
+    public void Test(){
+        System.out.println("success");
     }
 }
